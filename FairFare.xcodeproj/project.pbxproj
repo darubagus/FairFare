@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E04493A2C7B257000A182D5 /* FairFareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0449392C7B257000A182D5 /* FairFareApp.swift */; };
+		6E04493C2C7B257000A182D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E04493B2C7B257000A182D5 /* ContentView.swift */; };
+		6E04493E2C7B257600A182D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E04493D2C7B257600A182D5 /* Assets.xcassets */; };
+		6E0449412C7B257600A182D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0449402C7B257600A182D5 /* Preview Assets.xcassets */; };
+		6E0449432C7B257600A182D5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0449422C7B257600A182D5 /* Persistence.swift */; };
+		6E0449462C7B257700A182D5 /* FairFare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E0449442C7B257700A182D5 /* FairFare.xcdatamodeld */; };
+		6E0449502C7B257700A182D5 /* FairFareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E04494F2C7B257700A182D5 /* FairFareTests.swift */; };
+		6E04495A2C7B257700A182D5 /* FairFareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0449592C7B257700A182D5 /* FairFareUITests.swift */; };
+		6E04495C2C7B257700A182D5 /* FairFareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E04495B2C7B257700A182D5 /* FairFareUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E04494C2C7B257700A182D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E04492E2C7B257000A182D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0449352C7B257000A182D5;
+			remoteInfo = FairFare;
+		};
+		6E0449562C7B257700A182D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E04492E2C7B257000A182D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0449352C7B257000A182D5;
+			remoteInfo = FairFare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E0449362C7B257000A182D5 /* FairFare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FairFare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0449392C7B257000A182D5 /* FairFareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairFareApp.swift; sourceTree = "<group>"; };
+		6E04493B2C7B257000A182D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6E04493D2C7B257600A182D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E0449402C7B257600A182D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E0449422C7B257600A182D5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6E0449452C7B257700A182D5 /* FairFare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FairFare.xcdatamodel; sourceTree = "<group>"; };
+		6E04494B2C7B257700A182D5 /* FairFareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FairFareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E04494F2C7B257700A182D5 /* FairFareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairFareTests.swift; sourceTree = "<group>"; };
+		6E0449552C7B257700A182D5 /* FairFareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FairFareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0449592C7B257700A182D5 /* FairFareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairFareUITests.swift; sourceTree = "<group>"; };
+		6E04495B2C7B257700A182D5 /* FairFareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairFareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E0449332C7B257000A182D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0449482C7B257700A182D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0449522C7B257700A182D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E04492D2C7B257000A182D5 = {
+			isa = PBXGroup;
+			children = (
+				6E0449382C7B257000A182D5 /* FairFare */,
+				6E04494E2C7B257700A182D5 /* FairFareTests */,
+				6E0449582C7B257700A182D5 /* FairFareUITests */,
+				6E0449372C7B257000A182D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E0449372C7B257000A182D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E0449362C7B257000A182D5 /* FairFare.app */,
+				6E04494B2C7B257700A182D5 /* FairFareTests.xctest */,
+				6E0449552C7B257700A182D5 /* FairFareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E0449382C7B257000A182D5 /* FairFare */ = {
+			isa = PBXGroup;
+			children = (
+				6E0449392C7B257000A182D5 /* FairFareApp.swift */,
+				6E04493B2C7B257000A182D5 /* ContentView.swift */,
+				6E04493D2C7B257600A182D5 /* Assets.xcassets */,
+				6E0449422C7B257600A182D5 /* Persistence.swift */,
+				6E0449442C7B257700A182D5 /* FairFare.xcdatamodeld */,
+				6E04493F2C7B257600A182D5 /* Preview Content */,
+			);
+			path = FairFare;
+			sourceTree = "<group>";
+		};
+		6E04493F2C7B257600A182D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6E0449402C7B257600A182D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E04494E2C7B257700A182D5 /* FairFareTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E04494F2C7B257700A182D5 /* FairFareTests.swift */,
+			);
+			path = FairFareTests;
+			sourceTree = "<group>";
+		};
+		6E0449582C7B257700A182D5 /* FairFareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E0449592C7B257700A182D5 /* FairFareUITests.swift */,
+				6E04495B2C7B257700A182D5 /* FairFareUITestsLaunchTests.swift */,
+			);
+			path = FairFareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E0449352C7B257000A182D5 /* FairFare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E04495F2C7B257700A182D5 /* Build configuration list for PBXNativeTarget "FairFare" */;
+			buildPhases = (
+				6E0449322C7B257000A182D5 /* Sources */,
+				6E0449332C7B257000A182D5 /* Frameworks */,
+				6E0449342C7B257000A182D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FairFare;
+			productName = FairFare;
+			productReference = 6E0449362C7B257000A182D5 /* FairFare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E04494A2C7B257700A182D5 /* FairFareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0449622C7B257700A182D5 /* Build configuration list for PBXNativeTarget "FairFareTests" */;
+			buildPhases = (
+				6E0449472C7B257700A182D5 /* Sources */,
+				6E0449482C7B257700A182D5 /* Frameworks */,
+				6E0449492C7B257700A182D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E04494D2C7B257700A182D5 /* PBXTargetDependency */,
+			);
+			name = FairFareTests;
+			productName = FairFareTests;
+			productReference = 6E04494B2C7B257700A182D5 /* FairFareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E0449542C7B257700A182D5 /* FairFareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0449652C7B257700A182D5 /* Build configuration list for PBXNativeTarget "FairFareUITests" */;
+			buildPhases = (
+				6E0449512C7B257700A182D5 /* Sources */,
+				6E0449522C7B257700A182D5 /* Frameworks */,
+				6E0449532C7B257700A182D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E0449572C7B257700A182D5 /* PBXTargetDependency */,
+			);
+			name = FairFareUITests;
+			productName = FairFareUITests;
+			productReference = 6E0449552C7B257700A182D5 /* FairFareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E04492E2C7B257000A182D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6E0449352C7B257000A182D5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6E04494A2C7B257700A182D5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6E0449352C7B257000A182D5;
+					};
+					6E0449542C7B257700A182D5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6E0449352C7B257000A182D5;
+					};
+				};
+			};
+			buildConfigurationList = 6E0449312C7B257000A182D5 /* Build configuration list for PBXProject "FairFare" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E04492D2C7B257000A182D5;
+			productRefGroup = 6E0449372C7B257000A182D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E0449352C7B257000A182D5 /* FairFare */,
+				6E04494A2C7B257700A182D5 /* FairFareTests */,
+				6E0449542C7B257700A182D5 /* FairFareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E0449342C7B257000A182D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0449412C7B257600A182D5 /* Preview Assets.xcassets in Resources */,
+				6E04493E2C7B257600A182D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0449492C7B257700A182D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0449532C7B257700A182D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E0449322C7B257000A182D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0449432C7B257600A182D5 /* Persistence.swift in Sources */,
+				6E0449462C7B257700A182D5 /* FairFare.xcdatamodeld in Sources */,
+				6E04493C2C7B257000A182D5 /* ContentView.swift in Sources */,
+				6E04493A2C7B257000A182D5 /* FairFareApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0449472C7B257700A182D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0449502C7B257700A182D5 /* FairFareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0449512C7B257700A182D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E04495C2C7B257700A182D5 /* FairFareUITestsLaunchTests.swift in Sources */,
+				6E04495A2C7B257700A182D5 /* FairFareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E04494D2C7B257700A182D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0449352C7B257000A182D5 /* FairFare */;
+			targetProxy = 6E04494C2C7B257700A182D5 /* PBXContainerItemProxy */;
+		};
+		6E0449572C7B257700A182D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0449352C7B257000A182D5 /* FairFare */;
+			targetProxy = 6E0449562C7B257700A182D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E04495D2C7B257700A182D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E04495E2C7B257700A182D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E0449602C7B257700A182D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FairFare/Preview Content\"";
+				DEVELOPMENT_TEAM = 9826J85TM6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darubagus.FairFare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E0449612C7B257700A182D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FairFare/Preview Content\"";
+				DEVELOPMENT_TEAM = 9826J85TM6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darubagus.FairFare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E0449632C7B257700A182D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9826J85TM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darubagus.FairFareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FairFare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FairFare";
+			};
+			name = Debug;
+		};
+		6E0449642C7B257700A182D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9826J85TM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darubagus.FairFareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FairFare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FairFare";
+			};
+			name = Release;
+		};
+		6E0449662C7B257700A182D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9826J85TM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darubagus.FairFareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FairFare;
+			};
+			name = Debug;
+		};
+		6E0449672C7B257700A182D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9826J85TM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darubagus.FairFareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FairFare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E0449312C7B257000A182D5 /* Build configuration list for PBXProject "FairFare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E04495D2C7B257700A182D5 /* Debug */,
+				6E04495E2C7B257700A182D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E04495F2C7B257700A182D5 /* Build configuration list for PBXNativeTarget "FairFare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0449602C7B257700A182D5 /* Debug */,
+				6E0449612C7B257700A182D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0449622C7B257700A182D5 /* Build configuration list for PBXNativeTarget "FairFareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0449632C7B257700A182D5 /* Debug */,
+				6E0449642C7B257700A182D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0449652C7B257700A182D5 /* Build configuration list for PBXNativeTarget "FairFareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0449662C7B257700A182D5 /* Debug */,
+				6E0449672C7B257700A182D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E0449442C7B257700A182D5 /* FairFare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E0449452C7B257700A182D5 /* FairFare.xcdatamodel */,
+			);
+			currentVersion = 6E0449452C7B257700A182D5 /* FairFare.xcdatamodel */;
+			path = FairFare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6E04492E2C7B257000A182D5 /* Project object */;
+}
