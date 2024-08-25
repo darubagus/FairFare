@@ -1,114 +1,114 @@
-name: FairFare CI/CD
+# name: FairFare CI/CD
 
-on:
-  push:
-    branches: [ "main", "dev" ]
-  pull_request:
-    branches: [ "main", "dev" ]
+# on:
+#   push:
+#     branches: [ "main", "dev" ]
+#   pull_request:
+#     branches: [ "main", "dev" ]
 
-jobs:
-  build-and-test:
-    name: Build and Test
-    runs-on: macos-latest
+# jobs:
+#   build-and-test:
+#     name: Build and Test
+#     runs-on: macos-latest
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v3
 
-    - name: Set up Xcode
-      uses: maxim-lobanov/setup-xcode@v1
-      with:
-        xcode-version: latest-stable
+#     - name: Set up Xcode
+#       uses: maxim-lobanov/setup-xcode@v1
+#       with:
+#         xcode-version: latest-stable
 
-    - name: Show Xcode version
-      run: xcodebuild -version
+#     - name: Show Xcode version
+#       run: xcodebuild -version
 
-    - name: Install dependencies
-      run: |
-        if [ -f Podfile ]; then
-          pod install
-        fi
+#     - name: Install dependencies
+#       run: |
+#         if [ -f Podfile ]; then
+#           pod install
+#         fi
 
-    - name: Build and Test
-      run: |
-        xcodebuild clean test -project FairFare.xcodeproj -scheme FairFare -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.5' -enableCodeCoverage YES | xcpretty && exit ${PIPESTATUS[0]}
+#     - name: Build and Test
+#       run: |
+#         xcodebuild clean test -project FairFare.xcodeproj -scheme FairFare -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.5' -enableCodeCoverage YES | xcpretty && exit ${PIPESTATUS[0]}
 
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
+#   lint:
+#     name: Lint
+#     runs-on: ubuntu-latest
     
-    steps:
-    - uses: actions/checkout@v3
+#     steps:
+#     - uses: actions/checkout@v3
     
-    - name: SwiftLint
-      uses: norio-nomura/action-swiftlint@3.2.1
+#     - name: SwiftLint
+#       uses: norio-nomura/action-swiftlint@3.2.1
 
-  # deploy-testflight:
-  #   name: Deploy to TestFlight
-  #   needs: [build-and-test, lint]
-  #   runs-on: macos-latest
-  #   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+#   # deploy-testflight:
+#   #   name: Deploy to TestFlight
+#   #   needs: [build-and-test, lint]
+#   #   runs-on: macos-latest
+#   #   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
-  #   steps:
-  #   - name: Checkout code
-  #     uses: actions/checkout@v3
+#   #   steps:
+#   #   - name: Checkout code
+#   #     uses: actions/checkout@v3
 
-  #   - name: Select Xcode version
-  #     run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
+#   #   - name: Select Xcode version
+#   #     run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
 
-  #   - name: Install dependencies
-  #     run: |
-  #       if [ -f Podfile ]; then
-  #         pod install
-  #       fi
+#   #   - name: Install dependencies
+#   #     run: |
+#   #       if [ -f Podfile ]; then
+#   #         pod install
+#   #       fi
 
-  #   - name: Build for release
-  #     run: |
-  #       xcodebuild clean archive -workspace FairFare.xcworkspace -scheme FairFare -archivePath $PWD/build/FairFare.xcarchive -allowProvisioningUpdates
+#   #   - name: Build for release
+#   #     run: |
+#   #       xcodebuild clean archive -workspace FairFare.xcworkspace -scheme FairFare -archivePath $PWD/build/FairFare.xcarchive -allowProvisioningUpdates
 
-  #   - name: Export IPA
-  #     run: |
-  #       xcodebuild -exportArchive -archivePath $PWD/build/FairFare.xcarchive -exportOptionsPlist exportOptions.plist -exportPath $PWD/build
+#   #   - name: Export IPA
+#   #     run: |
+#   #       xcodebuild -exportArchive -archivePath $PWD/build/FairFare.xcarchive -exportOptionsPlist exportOptions.plist -exportPath $PWD/build
 
-  #   - name: Upload to TestFlight
-  #     uses: apple-actions/upload-testflight-build@v1
-  #     with: 
-  #       app-path: $PWD/build/FairFare.ipa
-  #       issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
-  #       api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
-  #       api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+#   #   - name: Upload to TestFlight
+#   #     uses: apple-actions/upload-testflight-build@v1
+#   #     with: 
+#   #       app-path: $PWD/build/FairFare.ipa
+#   #       issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+#   #       api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
+#   #       api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
 
-  deploy-dev:
-    name: Deploy Dev Build
-    needs: [build-and-test, lint]
-    runs-on: macos-latest
-    if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
+#   deploy-dev:
+#     name: Deploy Dev Build
+#     needs: [build-and-test, lint]
+#     runs-on: macos-latest
+#     if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v3
 
-    - name: Select Xcode version
-      run: sudo xcode-select -switch /Applications/Xcode_14.2.app
+#     - name: Select Xcode version
+#       run: sudo xcode-select -switch /Applications/Xcode_14.2.app
 
-    - name: Install dependencies
-      run: |
-        if [ -f Podfile ]; then
-          pod install
-        fi
+#     - name: Install dependencies
+#       run: |
+#         if [ -f Podfile ]; then
+#           pod install
+#         fi
 
-    - name: Build for development
-      run: |
-        xcodebuild clean archive -project FairFare.xcodeproj -scheme FairFare-Dev -archivePath $PWD/build/FairFare-Dev.xcarchive -allowProvisioningUpdates
+#     - name: Build for development
+#       run: |
+#         xcodebuild clean archive -project FairFare.xcodeproj -scheme FairFare-Dev -archivePath $PWD/build/FairFare-Dev.xcarchive -allowProvisioningUpdates
 
-    - name: Export IPA
-      run: |
-        xcodebuild -exportArchive -archivePath $PWD/build/FairFare-Dev.xcarchive -exportOptionsPlist exportOptions-dev.plist -exportPath $PWD/build
+#     - name: Export IPA
+#       run: |
+#         xcodebuild -exportArchive -archivePath $PWD/build/FairFare-Dev.xcarchive -exportOptionsPlist exportOptions-dev.plist -exportPath $PWD/build
 
-    # - name: Upload to App Distribution
-    #   uses: wzieba/Firebase-Distribution-Github-Action@v1
-    #   with:
-    #     appId: ${{secrets.FIREBASE_APP_ID}}
-    #     token: ${{secrets.FIREBASE_TOKEN}}
-    #     groups: testers
-    #     file: $PWD/build/FairFare-Dev.ipa
+#     # - name: Upload to App Distribution
+#     #   uses: wzieba/Firebase-Distribution-Github-Action@v1
+#     #   with:
+#     #     appId: ${{secrets.FIREBASE_APP_ID}}
+#     #     token: ${{secrets.FIREBASE_TOKEN}}
+#     #     groups: testers
+#     #     file: $PWD/build/FairFare-Dev.ipa
