@@ -15,8 +15,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Select Xcode version
-      run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
+    - name: List available Xcode versions
+      run: ls -n /Applications/ | grep Xcode
+
+    - name: Select latest Xcode version
+      run: sudo xcode-select -s /Applications/Xcode_$(ls -n /Applications/ | grep Xcode | sort -V | tail -n 1 | cut -d' ' -f9).app/Contents/Developer
+
+    - name: Show selected Xcode version
+      run: xcodebuild -version
 
     - name: Install dependencies
       run: |
