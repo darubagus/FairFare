@@ -10,3 +10,9 @@
 8. Currency conversion: For international groups or travel scenarios.
 9. Expense history and analytics: Provide insights into spending patterns over time.
 10. Social features: Allow users to add friends, split with nearby users, or share expenses on social media.
+
+Phase 1:
+Dynamic bill splitting
+Group management
+Expense categorization
+Debt tracking

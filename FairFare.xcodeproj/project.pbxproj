@@ -61,6 +61,7 @@
 		6E0449682C7B25BE00A182D5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6E04497D2C7B345C00A182D5 /* Feature.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Feature.md; sourceTree = "<group>"; };
 		6E0449822C7B38D400A182D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6E04498D2C7B3E9700A182D5 /* foldering structure.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "foldering structure.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +122,14 @@
 		6E0449382C7B257000A182D5 /* FairFare */ = {
 			isa = PBXGroup;
 			children = (
+				6E04498B2C7B3D4A00A182D5 /* SupportingFiles */,
+				6E04498A2C7B3D4300A182D5 /* Resources */,
+				6E0449892C7B3D3200A182D5 /* Features */,
+				6E0449882C7B3D2B00A182D5 /* Core */,
+				6E0449872C7B3D2500A182D5 /* Common */,
+				6E0449862C7B3D1F00A182D5 /* App */,
 				6E0449392C7B257000A182D5 /* FairFareApp.swift */,
 				6E04493B2C7B257000A182D5 /* ContentView.swift */,
-				6E04493D2C7B257600A182D5 /* Assets.xcassets */,
 				6E0449422C7B257600A182D5 /* Persistence.swift */,
 				6E0449442C7B257700A182D5 /* FairFare.xcdatamodeld */,
 				6E04493F2C7B257600A182D5 /* Preview Content */,
@@ -160,8 +166,60 @@
 			isa = PBXGroup;
 			children = (
 				6E04497D2C7B345C00A182D5 /* Feature.md */,
+				6E04498D2C7B3E9700A182D5 /* foldering structure.md */,
 			);
 			path = Documentation;
+			sourceTree = "<group>";
+		};
+		6E0449862C7B3D1F00A182D5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6E0449872C7B3D2500A182D5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6E0449882C7B3D2B00A182D5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6E0449892C7B3D3200A182D5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6E04498C2C7B3D9C00A182D5 /* DynamicBillSplitting */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6E04498A2C7B3D4300A182D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E04493D2C7B257600A182D5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E04498B2C7B3D4A00A182D5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6E04498C2C7B3D9C00A182D5 /* DynamicBillSplitting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DynamicBillSplitting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
