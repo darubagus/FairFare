@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   exportOptions-dev.plist
+   FairFare
+
+   Created by Daru Bagus Dananjaya on 25/08/24.
+   Copyright (c) 2024 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>method</key>
+        <string>ad-hoc</string>
+        <key>teamID</key>
+        <string>YOUR_TEAM_ID</string>
+        <key>provisioningProfiles</key>
+        <dict>
+            <key>com.yourcompany.FairFare</key>
+            <string>FairFare Development Profile</string>
+        </dict>
+        <key>signingCertificate</key>
+        <string>Apple Distribution</string>
+    </dict>
+</plist>
